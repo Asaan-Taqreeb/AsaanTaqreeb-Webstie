@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./_components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const customFont = localFont({
+  src: "../public/fonts/awesome.regular.otf",
+  variable: "--font-custom",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +21,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${customFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="w-full min-h-full flex flex-col flex-1  bg-waterloo text-colonial">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
+
