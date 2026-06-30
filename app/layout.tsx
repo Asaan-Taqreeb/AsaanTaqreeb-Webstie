@@ -23,7 +23,7 @@ export default function RootLayout({
       lang="en"
       className={`${customFont.variable} h-full antialiased`}
     >
-      <body className="w-full min-h-full flex flex-col flex-1  bg-waterloo text-colonial">
+      <body className="w-full min-h-full flex flex-col bg-waterloo text-colonial overflow-x-hidden">
         <Navbar />
         {children}
       </body>
