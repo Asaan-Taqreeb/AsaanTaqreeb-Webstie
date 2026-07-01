@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hero from '../public/hero.png'
+import Service from './screens/Services'
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Service />
     </main>
   );
 }
