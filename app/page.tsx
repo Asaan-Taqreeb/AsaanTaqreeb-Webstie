@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Hero from '../public/hero.png'
 import Service from './screens/Services'
+import TeamMembers from "./screens/TeamMembers";
+import Features from "./screens/Features";
 
 export default function Home() {
   return (
     <main className="flex-1">
-      <section className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-384 items-center px-4 py-10 sm:px-6 lg:px-8">
+      <section className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-384 items-center px-4 py-10 sm:px-6 lg:px-8 mb-10">
         <div className="grid w-full items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <h1 className="max-w-2xl text-3xl font-bold capitalize leading-tight sm:text-3xl lg:text-6xl">
@@ -45,6 +47,8 @@ export default function Home() {
         </div>
       </section>
       <Service />
+      <Features />
+      <TeamMembers />
     </main>
   );
 }

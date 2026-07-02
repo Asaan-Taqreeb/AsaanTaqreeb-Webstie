@@ -38,11 +38,11 @@ function Services() {
         <h2 className="text-3xl font-bold mt-5 text-center">Four Tailored Verticals One Unified Engine</h2>
         <p className="mt-5 text-lg text-justify md:w-1/2 font-medium leading-relaxed">Unlike basic multi-vendor scripts that treat every shop the same, Asaan Taqreeb features custom transaction models for Pakistan's distinct event services</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 mb-24">
         {
           service.map(services => {
             return (  
-              <div key={services.id} className="group relative bg-navy border border-white hover:border-pregold/30 rounded-2xl p-6 text-white transition-all duration-300 transform hover:-translate-y-1">
+              <div key={services.id} className="group relative bg-waterloo border border-white hover:border-pregold/30 rounded-2xl p-6 text-white transition-all duration-300 transform hover:-translate-y-1">
                 <div className="w-20 h-20 rounded-xl bg-pregold/10 flex items-center justify-center text-pregold text-xl mb-6 group-hover:bg-pregold group-hover:text-waterloo transition-all duration-300">
                   <services.icon size={30} />
                 </div>
