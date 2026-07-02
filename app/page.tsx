@@ -3,10 +3,11 @@ import Hero from '../public/hero.png'
 import Service from './screens/Services'
 import TeamMembers from "./screens/TeamMembers";
 import Features from "./screens/Features";
+import DownloadPage from "./screens/DownloadPage";
 
 export default function Home() {
   return (
-    <main className="flex-1">
+    <>
       <section className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-384 items-center px-4 py-10 sm:px-6 lg:px-8 mb-10">
         <div className="grid w-full items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
@@ -38,7 +39,7 @@ export default function Home() {
             <div className="relative w-full max-w-lg lg:max-w-none">
               <Image
                 src={Hero}
-                alt="hero"
+                alt="Asaan Taqreeb app preview on a smartphone"
                 className="h-auto mx-auto object-contain drop-shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
                 priority
               />
@@ -48,7 +49,8 @@ export default function Home() {
       </section>
       <Service />
       <Features />
+      <DownloadPage />
       <TeamMembers />
-    </main>
+    </>
   );
 }

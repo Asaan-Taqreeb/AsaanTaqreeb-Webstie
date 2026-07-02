@@ -42,7 +42,7 @@ function Services() {
         {
           service.map(services => {
             return (  
-              <div key={services.id} className="group relative bg-waterloo border border-white hover:border-pregold/30 rounded-2xl p-6 text-white transition-all duration-300 transform hover:-translate-y-1">
+              <div key={services.id} className="group relative bg-waterloo border-2 border-white hover:border-pregold rounded-4xl p-6 text-white transition-all duration-300 transform hover:-translate-y-1">
                 <div className="w-20 h-20 rounded-xl bg-pregold/10 flex items-center justify-center text-pregold text-xl mb-6 group-hover:bg-pregold group-hover:text-waterloo transition-all duration-300">
                   <services.icon size={30} />
                 </div>

@@ -4,7 +4,9 @@ export default function Navbar() {
     return (
         <header className="w-full border-b border-colonial/10 bg-waterloo/90 backdrop-blur">
             <div className="mx-auto flex h-24 w-full max-w-384 items-center justify-between px-4 sm:px-6 lg:px-8">
-                <h1 className="text-3xl font-medium font-custom sm:text-4xl lg:text-5xl">Asaan Taqreeb</h1>
+                <Link href="/" className="text-3xl font-medium font-custom sm:text-4xl lg:text-5xl">
+                    Asaan Taqreeb
+                </Link>
                 {/* <div>
                     <ul className="flex items-center gap-12">
                         <li className="text-base font-medium"><Link href={'/'}>Home</Link></li>
