@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "./_components/Navbar";
-import Footer from "./_components/Footer";
+import ClientLayoutWrapper from "./_components/ClientLayoutWrapper";
 
 const customFont = localFont({
   src: "../public/fonts/awesome.regular.otf",
@@ -57,9 +56,7 @@ export default function RootLayout({
       className={`${customFont.variable} h-full antialiased`}
     >
       <body className="w-full min-h-full flex flex-col bg-waterloo text-colonial overflow-x-hidden">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
     </html>
   );

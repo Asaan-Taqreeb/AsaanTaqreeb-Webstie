@@ -36,7 +36,7 @@ function Services() {
       <div className="mt-20 flex flex-col items-center justify-center">
         <p className="text-xl font-bold mb-2">Modular Ecosystem</p>
         <h2 className="text-3xl font-bold mt-5 text-center">Four Tailored Verticals One Unified Engine</h2>
-        <p className="mt-5 text-lg text-justify md:w-1/2 font-medium leading-relaxed">Unlike basic multi-vendor scripts that treat every shop the same, Asaan Taqreeb features custom transaction models for Pakistan's distinct event services</p>
+        <p className="mt-5 text-lg text-justify md:w-1/2 font-medium leading-relaxed">Unlike basic multi-vendor scripts that treat every shop the same, Asaan Taqreeb features custom transaction models for Pakistan&apos;s distinct event services</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 mb-24">
         {
