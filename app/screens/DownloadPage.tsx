@@ -1,17 +1,17 @@
 
-import { ArrowDownToLine, Apple, QrCode, ShieldCheck, Smartphone } from "lucide-react";
+import { ArrowDownToLine, Apple, ExternalLink, ShieldCheck, Smartphone } from "lucide-react";
 
 function DownloadPage() {
   const androidSteps = [
-    'Tap "Download Now" when the APK build is ready.',
+    'Tap "Download APK" to start downloading the app directly.',
     'If Android warns about unknown sources, allow installs from your browser.',
     'Open the file after download and finish the install prompt.',
   ];
 
   const iosSteps = [
-    'Install Expo Go from the App Store on your iPhone.',
-    'Open your camera and scan the QR code once it is generated.',
-    'Expo Go will launch the live app preview automatically.',
+    'Click "Open Web App" to access Asaan Taqreeb directly on iOS.',
+    'Optionally tap "Share" and select "Add to Home Screen".',
+    'Enjoy live access to all features on your iPhone.',
   ];
 
   return (
@@ -58,10 +58,14 @@ function DownloadPage() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <button className="inline-flex items-center justify-center gap-2 rounded-full bg-pregold px-5 py-3 text-sm font-bold text-waterloo transition-transform duration-200 hover:-translate-y-0.5">
+              <a
+                href="https://github.com/Asaan-Taqreeb/Asaan-Taqreeb-App/releases/download/build-18/asaantaqreeb.apk"
+                download
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-pregold px-5 py-3 text-sm font-bold text-waterloo transition-transform duration-200 hover:-translate-y-0.5"
+              >
                 <ArrowDownToLine size={16} />
-                Coming Soon
-              </button>
+                Download APK
+              </a>
             </div>
           </div>
 
@@ -72,12 +76,12 @@ function DownloadPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-colonial">Download for iOS</h3>
-                <p className="mt-1 text-sm text-white/65">Expo Go preview for live testing.</p>
+                <p className="mt-1 text-sm text-white/65">Web App for direct browser access.</p>
               </div>
             </div>
 
             <p className="mt-6 text-sm leading-7 text-white/75">
-              Since App Store review requires a paid developer account and longer approval times, Expo Go is the fastest way for iPhone users to open the live build.
+              Since App Store review is in progress, iPhone users can access the full features directly via the live Web App version.
             </p>
 
             <div className="mt-6 space-y-3">
@@ -90,10 +94,15 @@ function DownloadPage() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <button className="inline-flex items-center justify-center gap-2 rounded-full bg-colonial px-5 py-3 text-sm font-bold text-waterloo transition-transform duration-200 hover:-translate-y-0.5">
-                <QrCode size={16} />
-                Coming Soon
-              </button>
+              <a
+                href="https://asaan-taqreeb.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-colonial px-5 py-3 text-sm font-bold text-waterloo transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                <ExternalLink size={16} />
+                Open Web App
+              </a>
             </div>
           </div>
         </div>

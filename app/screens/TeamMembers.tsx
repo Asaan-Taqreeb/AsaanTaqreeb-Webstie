@@ -1,5 +1,5 @@
 import { Github, Linkedin } from "iconoir-react"
-import { CircleUser, Dot } from "lucide-react"
+import { CircleUser } from "lucide-react"
 import Link from "next/link"
 
 function TeamMembers() {
@@ -15,15 +15,15 @@ function TeamMembers() {
       id: 2,
       name: "Hira Ishaq",
       subTitle: "Full Stack Developer",
-      GitLink: "/",
-      LinkedinLink: "/",
+      GitLink: "https://github.com/hiraishaqqqqq-hub",
+      LinkedinLink: "https://www.linkedin.com/in/hira-ishaq-6799382ba/",
     },
     {
       id: 3,
       name: "Junaid Rashid",
       subTitle: "AI Developer",
-      GitLink: "/",
-      LinkedinLink: "/",
+      GitLink: "https://github.com/Junaid-ai-solutions",
+      LinkedinLink: "https://www.linkedin.com/in/junaid-ai-solutions/",
     },
   ]
 
